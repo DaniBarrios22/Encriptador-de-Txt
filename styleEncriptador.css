@@ -1,0 +1,237 @@
+/* 
+    Estilos Generales
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    background: #F3F5FC;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor-sm {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 
+    Estilos Cabecera
+*/
+
+header {
+    padding: 20px 0 30px 0;
+}
+
+.box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.box__titulo {
+    font-weight: normal;
+    text-shadow: 0px 4px 6px rgba(10,56,113,0.5);
+    font-size: 32px;
+}
+
+.box__enlace .fa-github {
+    margin-right: 4px;
+}
+
+.box__enlace {
+    text-decoration: none;
+    color: #0A3871;
+    font-weight: bold;
+    padding: 7px;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.box__enlace:hover {
+    cursor: pointer;
+    background: #0A3871;
+    color: #fff;
+    padding: 7px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+}
+
+/* 
+    Estilos Principal (main)
+ */
+
+main {
+    height: auto;
+    overflow: hidden;
+}
+
+.form {
+    width: 70%;  
+    float: left;
+}
+
+.form__texto {
+    resize: none;
+    font-size: 20px;
+    width: 100%;
+    color: #0A3871;
+    border: none;
+    padding: 10px;
+    background: transparent;
+}
+
+.form__texto:focus {
+    outline: none;
+    /* outline-color: #87C6F7;
+    transition: .7s all easy; */
+}
+
+.form__info .fa-info-circle {
+    margin-right: 4px;
+}
+
+.form__info {
+    color: #495057;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 300%;
+    margin-bottom: 10px;
+}
+
+.form__boton-encriptar {
+    border: none;
+    background: #0A3871;
+    color: #fff;
+    -webkit-border-radius: 15px;
+            border-radius: 15px;
+    padding: 15px;
+    width: 280px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-right: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.form__boton-desencriptar {
+    border: 1px solid #0A3871;
+    background: #D8DFE8;
+    color: #0A3871;
+    -webkit-border-radius: 15px;
+            border-radius: 15px;
+    padding: 15px;
+    width: 280px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    cursor: pointer;
+}
+
+.form__boton-encriptar:hover {
+    cursor: pointer;
+    background: #072B61;
+}
+
+
+/* Estilos para el aside */
+.panel {
+    float: right;
+    width: 25%;
+    height: 480px;
+    background: #fff;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    -webkit-box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.panel__munheco {
+    margin: 10% auto 5% auto;
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+.panel__leyenda {
+    text-align: center;
+}
+
+.panel__texto-cifrado {
+    resize: none;
+    padding: 10px;
+    color: #0A3871;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    
+}
+
+.panel__texto-cifrado:focus {
+    outline: none;
+}
+
+.panel__boton-copiar {
+    border: 1px solid #0A3871;
+    background: #fff;
+    color: #0A3871;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* 
+    Estilos pie de pagina */
+
+footer {
+    background: #282C34;
+    padding: 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* 
+    Estilos para animaciones, efecto u otros
+*/
+.panel__munheco-quitar, .panel__leyenda-quitar {
+    display: none;
+}
+
+.panel__texto-altura {
+    height: 88%;
+}
